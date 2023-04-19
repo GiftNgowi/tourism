@@ -65,20 +65,19 @@
 
       <v-app-bar-nav-icon class="white--text d-flex d-sm-none" />
     </v-app-bar>
-    <v-content>
+    <v-content class="pt-5">
+      <section class="main-text pt-14">
+        <h1>Hotels to visit while in Moshi</h1>
+        <p>
+          We pride ourselves on providing exceptional service and comfortable
+          accommodations to all of our guests.<br />
+          Our rooms are spacious, well-appointed, and designed with your comfort
+          in mind.
+        </p>
+      </section>
       <section>
         <div id="popular">
-          <v-container class="pt-10">
-            <div class="pt-10">
-              <h3>Hotels to visit while in Moshi</h3>
-              <p>
-                We pride ourselves on providing exceptional service and
-                comfortable accommodations to all of our guests. Our rooms are
-                spacious, well-appointed, and designed with your comfort in
-                mind.
-              </p>
-            </div>
-
+          <v-container>
             <v-row class="pt-10">
               <v-col>
                 <v-card class="mx-auto" max-width="344">
@@ -123,12 +122,11 @@
                   <v-card-title> Panone Hotel Boma </v-card-title>
 
                   <v-card-subtitle>
-                    Situated in Boma la Ngombe, 48 km from Mount Kilimanjaro,
-                    Panone Hotel Boma features accommodation with a terrace,
-                    free private parking, a restaurant and a bar. This 2-star
-                    hotel offers room service and a 24-hour front desk. The
-                    accommodation offers airport transfers, while a bicycle
-                    rental service is also available.
+                    Situated in Boma la Ngombe, This hotel features
+                    accommodation with a terrace, free private parking, a
+                    restaurant and a bar. This 2-star hotel offers room service
+                    and a 24-hour front desk. The accommodation offers airport
+                    transfers, while a bicycle rental service is also available.
                   </v-card-subtitle>
 
                   <v-card-actions>
@@ -156,13 +154,11 @@
                   <v-card-title> Karibu Heritage House </v-card-title>
 
                   <v-card-subtitle>
-                    Set in Moshi, 4.4 km from Uhuru monument, Karibu Heritage
-                    House offers accommodation with an outdoor swimming pool,
-                    free private parking, a garden and a shared lounge.
-                    Featuring room service, this property also welcomes guests
-                    with a restaurant and a terrace. The accommodation features
-                    a 24-hour front desk, airport transfers, a shared kitchen
-                    and free WiFi throughout the property.
+                    This house offers accommodation with an outdoor swimming
+                    pool, free private parking, a garden and a shared lounge.
+                    This property also welcomes guests with a restaurant and a
+                    terrace. The accommodation features airport transfers and
+                    free WiFi throughout the property.
                   </v-card-subtitle>
 
                   <v-card-actions>
@@ -225,13 +221,12 @@
                   <v-card-title> Gold Crest Hotel </v-card-title>
 
                   <v-card-subtitle>
-                    Set in Moshi, 4.4 km from Uhuru monument, Gold Crest Hotel
-                    offers accommodation with an outdoor swimming pool, free
-                    private parking, a garden and a shared lounge. Featuring
-                    room service, this property also welcomes guests with a
-                    restaurant and a terrace. The accommodation features a
-                    24-hour front desk, airport transfers, a shared kitchen and
-                    free WiFi throughout the property.
+                    Gold Crest Hotel offers accommodation with an outdoor
+                    swimming pool, free private parking, a garden and a shared
+                    lounge. Featuring room service, this property also welcomes
+                    guests with a restaurant and a terrace. The accommodation
+                    features airport transfers, a shared kitchen and free WiFi
+                    throughout the property.
                   </v-card-subtitle>
 
                   <v-card-actions>
@@ -259,12 +254,12 @@
                   <v-card-title> Tulia Retreat Hotel and Spa </v-card-title>
 
                   <v-card-subtitle>
-                    Situated in Moshi, 1.5 km from Old German Boma, Tulia
-                    Retreat Hotel and Spa features accommodation with an outdoor
-                    swimming pool, free private parking, a garden and a shared
-                    lounge. With a terrace, the property also has a restaurant,
-                    as well as a bar. The accommodation offers a 24-hour front
-                    desk, airport transfers, room service and free WiFi.
+                    Tulia Retreat Hotel and Spa features accommodation with an
+                    outdoor swimming pool, free private parking, a garden and a
+                    shared lounge. With a terrace, the property also has a
+                    restaurant, as well as a bar. The accommodation offers a
+                    24-hour front desk, airport transfers, room service and free
+                    WiFi.
                   </v-card-subtitle>
 
                   <v-card-actions>
@@ -282,70 +277,28 @@
                 </v-card>
               </v-col>
             </v-row>
-            <v-btn
-              routed
-              to="#"
-              rounded
-              class="font-3 btn"
-              color="#6A7882"
-              elevation="5"
-              dark
-              x-large
-              style="text-transform: none; font-weight: 850; width: 340px"
-              >View More</v-btn
-            >
           </v-container>
         </div>
+        <v-btn
+          routed
+          to="#"
+          class="mb-5 move-left"
+          color="#6A7882"
+          elevation="5"
+          dark
+          x-large
+          style="text-transform: none; font-weight: 850; width: 150px"
+          >View More</v-btn
+        >
       </section>
     </v-content>
     <footer class="foot">
       <v-col lg="12">
-        <v-row justify="center">
-          <v-col lg="3">
-            <p>OUR TOURS</p>
-            <p>
-              thank you for visiting our site, and we hope you find the
-              resources and information here helpful in planning your next
-              adventure. <br />
-              Hakuna Matata!
-            </p>
-          </v-col>
-          <v-col lg="3">
-            <p>CONTACT</p>
-
-            <p>+255 767 000 700</p>
-            <p>+255 787 300 700</p>
-            <p>ptt@gmail.com</p>
-          </v-col>
-          <v-col lg="3" class="text-center">
-            <p>SOCIAL MEDIAS</p>
-            <v-btn
-              v-for="icon in icons"
-              :key="icon"
-              class="mx-4 black--text"
-              icon
-            >
-              <v-icon size="24px">
-                {{ icon }}
-              </v-icon>
-            </v-btn>
-          </v-col>
-          <v-col lg="3">
-            <p>QUICK LINKS</p>
-            <ul>
-              <li><a href="#popular">Explore</a></li>
-              <li><router-link to="/AboutView">About</router-link></li>
-              <li><router-link to="/RestView">Restaurants</router-link></li>
-              <li><router-link to="/HotelView">Where to Stay</router-link></li>
-            </ul>
-          </v-col>
-        </v-row>
         <div>
-          <v-divider></v-divider>
-
           <p class="text-center mt-2 mb-0">
-            <v-icon>mdi-copyright</v-icon> Copyright Private Tours in Tanzania.
-            All Rights Reserved {{ new Date().getFullYear() }}
+            <v-icon class="white--text">mdi-copyright</v-icon> Copyright Private
+            Tours in Tanzania. All Rights Reserved
+            {{ new Date().getFullYear() }}
           </p>
         </div>
       </v-col>
@@ -366,6 +319,24 @@ export default {
 </script>
 
 <style scoped>
+.move-left {
+  margin-left: 149px;
+}
+.main-text {
+  width: 100vw;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: #f2f0f0;
+}
+.main-text h1 {
+  font-size: 4vh;
+  color: black;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  font-family: "Poppins", sans-serif;
+}
 .weight-500 {
   font-weight: 500 !important;
 }
@@ -377,6 +348,10 @@ export default {
       rgba(0, 0, 0, 0.5) 100%
     ),
     url("../assets/home.jpeg");
-  height: 50vh !important;
+  height: 10vh !important;
+  color: white;
+}
+.main-text {
+  text-align: center;
 }
 </style>

@@ -25,7 +25,7 @@
             ><v-icon size="18">mdi-home</v-icon>
             <span class="mb-n1">HOME</span></v-btn
           >
-         
+
           <v-btn
             router
             to="/popDestination"
@@ -38,7 +38,8 @@
             <span class="mb-n1">POPULAR DESTINATIONS</span></v-btn
           >
           <v-btn
-          router to = "/RestView"
+            router
+            to="/RestView"
             small
             plain
             text
@@ -48,7 +49,8 @@
             <span class="mb-n1">RESTAURANTS</span></v-btn
           >
           <v-btn
-          router to = "/HotelView"
+            router
+            to="/HotelView"
             small
             plain
             text
@@ -57,7 +59,6 @@
             ><v-icon size="18">mdi-home</v-icon>
             <span class="mb-n1">WHERE TO STAY</span></v-btn
           >
-        
         </div>
       </div>
       <v-spacer></v-spacer>
@@ -65,226 +66,175 @@
       <v-app-bar-nav-icon class="white--text d-flex d-sm-none" />
     </v-app-bar>
     <v-content>
-      <v-container class="media pt-10" id="media">
-         <div class="pt-10">
-          <h2>Adventures in Moshi</h2>
-
-          <h3>Places to visit and things to do while in Moshi</h3>
-        
-        </div>
-
-        <div class="main-container pt-10">
-          <!-- row 1 -->
-          <div class="flip-box image image-1">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-
-                <img src="../assets/moshi6.jpg" alt="Erupting Volcano" />
-                <div class="centered white--text">
-                  <h2>Climbing Kilimanjaro</h2>
-                </div>
-              </div>
-              <div class="flip-box-back pt-5">
-                <h2>Mount Kilimanjaro</h2>
-                <br />
-                <p>
-                  Mount Kilimanjaro is Africa's highest peak, located in the
-                  Kilimanjaro Region of Northern Tanzania.
-                </p>
-                <br />
-                <v-btn
-                  router
-                  to="/MountKlm"
-                  id="myBtn"
-                  class="button dark--text"
-                  >Read more</v-btn
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="flip-box image image-2">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-      
-                <img src="../assets/moshi4.jpg" alt="Icelandic horses " />
-                <div class="centered white--text">
-                  <h2>Cultural Tours</h2>
-                </div>
-              </div>
-              <div class="flip-box-back">
-           
-              </div>
-            </div>
-          </div>
-
-          <div class="flip-box image image-3">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-         
-                <img src="../assets/tz.png" alt="majimoto" />
-                <div class="centered white--text">
-                  <h2>Kikuletwa Springs (Maji Moto)</h2>
-                </div>
-              </div>
-              <div class="flip-box-back">
-             
-              </div>
-            </div>
-          </div>
-
-          <!-- row 2 -->
-          <div class="flip-box image image-4">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-
-                <img src="../assets/moshi2.jpg" alt="hike" />
-                <div class="centered white--text"><h2>Hiking Tours</h2></div>
-              </div>
-              <div class="flip-box-back">
-            
-              </div>
-            </div>
-          </div>
-
-          <div class="flip-box image image-5">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-            
-                <img src="../assets/moshi3.jpg" alt="Parliament of Puffins" />
-                <div class="centered white--text">
-                  <h2>Materuni Waterfalls</h2>
-                </div>
-              </div>
-              <div class="flip-box-back">
-            
-              </div>
-            </div>
-          </div>
-
-          <div class="flip-box image image-6">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-         
-                <img src="../assets/moshi5.jpg" alt=" Iceland Beach" />
-                <div class="centered white--text">
-                  <h2>Lake Chala</h2>
-                </div>
-              </div>
-              <div class="flip-box-back">
-              
-              </div>
-            </div>
-          </div>
-
-          <!-- row 3 -->
-          <div class="flip-box image image-7">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-        
-                <img src="../assets/moshi7.jpg" alt="Reykjavík City" />
-                <div class="centered white--text">
-                  <h2>Makasa Tanzania Safaris</h2>
-                </div>
-              </div>
-              <div class="flip-box-back">
-             
-              </div>
-            </div>
-          </div>
-          <div class="flip-box image image-8">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-            
-                <img src="../assets/moshi8.jpg" alt="Skogafoss Waterfall" />
-                <div class="centered white--text">
-                  <h2>MamaAfrica Gift</h2>
-                </div>
-              </div>
-              <div class="flip-box-back">
-             
-              </div>
-            </div>
-          </div>
-          <div class="flip-box image image-9">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-            
-                <img src="../assets/moshi9.jpg" alt="serval" />
-                <div class="centered white--text"><h2>Serval Wildlife</h2></div>
-              </div>
-              <div class="flip-box-back">
-             
-              </div>
-            </div>
-          </div>
-          <v-btn
-            routed
-            to="#"
-            rounded
-            class="font-3 btn"
-            color="#6A7882"
-            elevation="5"
-            dark
-            x-large
-            style="text-transform: none; font-weight: 850; width: 340px"
-            >View More</v-btn
-          >
-        </div>
-      </v-container>
-    </v-content>
-     <footer class="foot">
-             <v-col lg="12">
-      <v-row justify="center">
-           <v-col lg="3">
-      <p>OUR TOURS</p> 
-           <p>thank you for visiting our site, and we hope you find the resources and information
-                   here helpful in planning your next adventure. <br>
-Hakuna Matata!</p>
-       
-        </v-col>
-        <v-col lg="3">
-          <p>CONTACT</p>
-          
-          <p>+255 767 000 700</p>
-          <p>+255 787 300 700</p>
-          <p>ptt@gmail.com</p>
-        </v-col>
-        <v-col lg="3" class="text-center">
-          
-            <p>SOCIAL MEDIAS</p>
-            <v-btn
-              v-for="icon in icons"
-              :key="icon"
-              class="mx-4 black--text"
-              icon
-            >
-              <v-icon size="24px">
-                {{ icon }}
-              </v-icon>
-            </v-btn>
-         
-        </v-col>
-        <v-col lg="3">
-          <p>QUICK LINKS</p>
-                <ul>
-                    <li>   <a href="#popular">Explore</a></li>
-                    <li><router-link to="/AboutView">About</router-link></li>
-                    <li>  <router-link to="/RestView">Restaurants</router-link></li>
-                    <li>  <router-link to="/HotelView">Where to Stay</router-link></li>
-                </ul>
-        </v-col>
-      </v-row>
-      <div>
-        <v-divider></v-divider>
-
-        <p class="text-center mt-2 mb-0">
-          <v-icon>mdi-copyright</v-icon> Copyright Private Tours in Tanzania. All Rights
-          Reserved {{ new Date().getFullYear() }}
+      <section class="main-text pt-14">
+        <h1 class="pt-5">Why Visit Moshi?</h1>
+        <p>
+          Adventures in Moshi offer a variety of exciting experiences for
+          travelers. Some must-visit places in Moshi include Mount Kilimanjaro,<br>
+          Moshi Market, and Lake Chala. Travelers can also enjoy hiking,
+          safaris, and cultural experiences while in Moshi.
         </p>
-      </div>
-    </v-col>
-           
+      </section>
+      <v-container class="media pt-10" id="media">
+        <v-row class="main-container pt-5">
+          <v-col>
+            <div class="flip-box image image-1">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="../assets/moshi6.jpg" alt="Erupting Volcano" />
+                  <div class="centered white--text">
+                    <h2>Climbing Kilimanjaro</h2>
+                  </div>
+                </div>
+                <div class="flip-box-back pt-5">
+                  <h2>Mount Kilimanjaro</h2>
+                  <br />
+                  <p>
+                    Mount Kilimanjaro is Africa's highest peak, located in the
+                    Kilimanjaro Region of Northern Tanzania.
+                  </p>
+                  <br />
+                  <v-btn
+                    router
+                    to="/MountKlm"
+                    id="myBtn"
+                    class="button dark--text"
+                    >Read more</v-btn
+                  >
+                </div>
+              </div>
+            </div>
+          </v-col>
+          <v-col>
+            <div class="flip-box image image-2">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="../assets/moshi4.jpg" alt="Icelandic horses " />
+                  <div class="centered white--text">
+                    <h2>Cultural Tours</h2>
+                  </div>
+                </div>
+                <div class="flip-box-back"></div>
+              </div>
+            </div>
+          </v-col>
+          <v-col>
+            <div class="flip-box image image-3">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="../assets/tz.png" alt="majimoto" />
+                  <div class="centered white--text">
+                    <h2>Kikuletwa Springs (Maji Moto)</h2>
+                  </div>
+                </div>
+                <div class="flip-box-back"></div>
+              </div>
+            </div>
+          </v-col>
+        </v-row>
+        <v-row class="main-container">
+          <v-col>
+            <div class="flip-box image image-4">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="../assets/moshi2.jpg" alt="hike" />
+                  <div class="centered white--text"><h2>Hiking Tours</h2></div>
+                </div>
+                <div class="flip-box-back"></div>
+              </div>
+            </div>
+          </v-col>
+          <v-col>
+            <div class="flip-box image image-5">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="../assets/moshi3.jpg" alt="Parliament of Puffins" />
+                  <div class="centered white--text">
+                    <h2>Materuni Waterfalls</h2>
+                  </div>
+                </div>
+                <div class="flip-box-back"></div>
+              </div>
+            </div>
+          </v-col>
+          <v-col>
+            <div class="flip-box image image-6">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="../assets/moshi5.jpg" alt=" Iceland Beach" />
+                  <div class="centered white--text">
+                    <h2>Lake Chala</h2>
+                  </div>
+                </div>
+                <div class="flip-box-back"></div>
+              </div>
+            </div>
+          </v-col>
+        </v-row>
+        <v-row class="main-container">
+          <v-col>
+            <div class="flip-box image image-7">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="../assets/moshi7.jpg" alt="Reykjavík City" />
+                  <div class="centered white--text">
+                    <h2>Makasa Tanzania Safaris</h2>
+                  </div>
+                </div>
+                <div class="flip-box-back"></div>
+              </div>
+            </div>
+          </v-col>
+          <v-col>
+            <div class="flip-box image image-8">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="../assets/moshi8.jpg" alt="Skogafoss Waterfall" />
+                  <div class="centered white--text">
+                    <h2>MamaAfrica Gift</h2>
+                  </div>
+                </div>
+                <div class="flip-box-back"></div>
+              </div>
+            </div>
+          </v-col>
+          <v-col>
+            <div class="flip-box image image-9">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="../assets/moshi9.jpg" alt="serval" />
+                  <div class="centered white--text">
+                    <h2>Serval Wildlife</h2>
+                  </div>
+                </div>
+                <div class="flip-box-back"></div>
+              </div>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+      <v-btn
+        routed
+        to="#"
+        class="mb-5 move-left"
+        color="#6A7882"
+        elevation="5"
+        dark
+        x-large
+        style="text-transform: none; font-weight: 850; width: 150px"
+        >View More</v-btn
+      >
+    </v-content>
+    <footer class="foot">
+      <v-col lg="12">
+        <div>
+          <p class="text-center mt-1 mb-0">
+            <v-icon class="white--text">mdi-copyright</v-icon> Copyright Private
+            Tours in Tanzania. All Rights Reserved
+            {{ new Date().getFullYear() }}
+          </p>
+        </div>
+      </v-col>
     </footer>
   </v-app>
 </template>
@@ -293,24 +243,33 @@ Hakuna Matata!</p>
 import "../css/fonts.css";
 export default {
   name: "ThingsTodo",
-   data() {
+  data() {
     return {
-       icons: ["mdi-facebook", "mdi-twitter", "mdi-instagram"],
+      icons: ["mdi-facebook", "mdi-twitter", "mdi-instagram"],
     };
   },
 };
 </script>
 
 <style scoped>
-.foot {
-   background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.5) 1%,
-      rgba(0, 0, 0, 0.273638) 51.03%,
-      rgba(0, 0, 0, 0.5) 100%
-    ),
-    url("../assets/home.jpeg");
-  height: 50vh !important;
+.main-text {
+  width: 100vw;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: #f2f0f0;
+}
+.main-text h1 {
+  font-size: 4vh;
+  color: black;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  font-family: "Poppins", sans-serif;
+}
+
+.move-left {
+  margin-left: 133px;
 }
 .weight-500 {
   font-weight: 500 !important;
@@ -353,6 +312,8 @@ export default {
   height: 200px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+  object-fit: cover;
 }
 
 /* This container is needed to position the front and back side */
@@ -398,5 +359,16 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.foot {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 1%,
+      rgba(0, 0, 0, 0.273638) 51.03%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../assets/home.jpeg");
+  height: 9vh !important;
+  color: white;
 }
 </style>

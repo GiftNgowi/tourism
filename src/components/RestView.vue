@@ -65,19 +65,20 @@
 
       <v-app-bar-nav-icon class="white--text d-flex d-sm-none" />
     </v-app-bar>
-    <v-content>
-      <section>
-        <div id="popular">
-          <v-container class="pt-10">
-            <div class="pt-10">
-              <h3>Restaurants to visit while in Moshi</h3>
+    <v-content class="pt-5">
+       <section class="main-text pt-14">
+              <h1>Restaurants to visit while in Moshi</h1>
               <p>
                 Welcome to explore our restaurants in Moshi! We specialize in different type of
-                cuisine and offer a variety of dishes to suit all
-                tastes. <br> So come on in and enjoy a delicious dining experience with
+                cuisine <br>and offer a variety of dishes to suit all
+                tastes. So come on in and enjoy a delicious dining experience with
                 us!
               </p>
-            </div>
+            </section>
+      <section>
+        <div id="popular">
+          <v-container>
+           
 
             <v-row class="pt-10">
               <v-col>
@@ -126,7 +127,7 @@
                     Details <br />
                     PRICE RANGE: TZS 1,000 - TZS 20,000 <br />
                     CUISINES <br />
-                    Mexican, American, African, Pizza, Contemporary MEALS <br />
+                    Mexican, American, African, Pizza, Contemporary <br/> MEALS <br/> 
                     Breakfast, Lunch, Dinner
                   </v-card-subtitle>
 
@@ -227,8 +228,7 @@
                     PRICE RANGE: TZS 15,000 - TZS 65,000 <br />
                     CUISINES <br />
                     Chinese, Indian, African, International <br />
-                    SPECIAL DIETS <br />
-                    Vegetarian Friendly, Vegan Options, Halal <br />
+                   
                     MEALS <br />
                     Lunch, Dinner, Breakfast
                   </v-card-subtitle>
@@ -263,7 +263,7 @@
                     CUISINES <br />
                     Indian, African, European <br />
                     MEALS <br />
-                    Breakfast, Lunch, Dinner, Brunch, Late Night, Drinks
+                    Breakfast, Lunch, Dinner, Brunch, Drinks
                   </v-card-subtitle>
 
                   <v-card-actions>
@@ -281,69 +281,30 @@
                 </v-card>
               </v-col>
             </v-row>
-            <v-btn
-              routed
-              to="#"
-              rounded
-              class="font-3 btn"
-              color="#6A7882"
-              elevation="5"
-              dark
-              x-large
-              style="text-transform: none; font-weight: 850; width: 340px"
-              >View More</v-btn
-            >
+      
           </v-container>
         </div>
+           <v-btn
+          routed
+          to="#"
+      
+       class="mb-5 move-left"
+          color="#6A7882"
+          elevation="5"
+          dark
+          x-large
+          style="text-transform: none; font-weight: 850; width: 150px"
+          >View More</v-btn
+        >
       </section>
     </v-content>
     <footer class="foot">
       <v-col lg="12">
-        <v-row justify="center">
-          <v-col lg="3">
-            <p>OUR TOURS</p>
-            <p>
-              thank you for visiting our site, and we hope you find the
-              resources and information here helpful in planning your next
-              adventure. <br />
-              Hakuna Matata!
-            </p>
-          </v-col>
-          <v-col lg="3">
-            <p>CONTACT</p>
-
-            <p>+255 767 000 700</p>
-            <p>+255 787 300 700</p>
-            <p>ptt@gmail.com</p>
-          </v-col>
-          <v-col lg="3" class="text-center">
-            <p>SOCIAL MEDIAS</p>
-            <v-btn
-              v-for="icon in icons"
-              :key="icon"
-              class="mx-4 black--text"
-              icon
-            >
-              <v-icon size="24px">
-                {{ icon }}
-              </v-icon>
-            </v-btn>
-          </v-col>
-          <v-col lg="3">
-            <p>QUICK LINKS</p>
-            <ul>
-              <li><a href="#popular">Explore</a></li>
-              <li><router-link to="/AboutView">About</router-link></li>
-              <li><router-link to="/RestView">Restaurants</router-link></li>
-              <li><router-link to="/HotelView">Where to Stay</router-link></li>
-            </ul>
-          </v-col>
-        </v-row>
         <div>
-          <v-divider></v-divider>
+       
 
           <p class="text-center mt-2 mb-0">
-            <v-icon>mdi-copyright</v-icon> Copyright Private Tours in Tanzania.
+            <v-icon class="white--text">mdi-copyright</v-icon> Copyright Private Tours in Tanzania.
             All Rights Reserved {{ new Date().getFullYear() }}
           </p>
         </div>
@@ -365,6 +326,25 @@ export default {
 </script>
 
 <style scoped>
+.move-left {
+   margin-left: 149px;
+ 
+}
+.main-text {
+  width: 100vw;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: #f2f0f0;
+}
+.main-text h1 {
+  font-size: 4vh;
+  color: black;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  font-family: "Poppins", sans-serif;
+}
 .weight-500 {
   font-weight: 500 !important;
 }
@@ -376,6 +356,10 @@ export default {
       rgba(0, 0, 0, 0.5) 100%
     ),
     url("../assets/home.jpeg");
-  height: 50vh !important;
+  height: 10vh !important;
+  color: white;
+}
+.main-text {
+  text-align: center;
 }
 </style>

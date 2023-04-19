@@ -122,7 +122,7 @@
             <v-col cols="12" sm="6">
               <v-text-field
                 v-model="visit"
-                label="When are you planning to Visit?"
+                label="When are you planning to visit?"
                 required
                 outlined
                 type="date"
@@ -285,7 +285,7 @@
               <p>What type of vacation trip are you thinking of?</p>
 
              
-              <v-checkbox label="AirFare Needed"></v-checkbox>
+              <v-checkbox label="Flight Needed"></v-checkbox>
               <v-checkbox label="Rental Car Needed"></v-checkbox>
               <v-checkbox label="All-inclusive Resort"></v-checkbox>
             </v-col>
@@ -326,7 +326,7 @@
           </p>
 
           <v-btn
-          router to="/"
+        
             class="mt-5 white--text"
             type="submit"
             elevation="20"
@@ -359,6 +359,7 @@ export default {
   data() {
     return {};
   },
+
 };
 </script>
 
